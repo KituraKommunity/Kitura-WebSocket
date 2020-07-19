@@ -1,7 +1,7 @@
 
 <p align="center">
     <a href="http://kitura.io/">
-        <img src="https://raw.githubusercontent.com/IBM-Swift/Kitura/master/Sources/Kitura/resources/kitura-bird.svg?sanitize=true" height="100" alt="Kitura">
+        <img src="https://raw.githubusercontent.com/KituraKommunity/Kitura/master/Sources/Kitura/resources/kitura-bird.svg?sanitize=true" height="100" alt="Kitura">
     </a>
 </p>
 
@@ -9,8 +9,8 @@
     <a href="https://ibm-swift.github.io/Kitura-WebSocket/index.html">
     <img src="https://img.shields.io/badge/apidoc-KituraWebSocket-1FBCE4.svg?style=flat" alt="APIDoc">
     </a>
-    <a href="https://travis-ci.org/IBM-Swift/Kitura-WebSocket">
-    <img src="https://travis-ci.org/IBM-Swift/Kitura-WebSocket.svg?branch=master" alt="Build Status - Master">
+    <a href="https://travis-ci.org/KituraKommunity/Kitura-WebSocket">
+    <img src="https://travis-ci.org/KituraKommunity/Kitura-WebSocket.svg?branch=master" alt="Build Status - Master">
     </a>
     <img src="https://img.shields.io/badge/os-macOS-green.svg?style=flat" alt="macOS">
     <img src="https://img.shields.io/badge/os-linux-green.svg?style=flat" alt="Linux">
@@ -48,10 +48,10 @@ To enable WSS set up your Kitura based server for SSL/TLS support. See the tutor
 
 #### Add dependencies
 
-Add the `Kitura-WebSocket` package to the dependencies within your application’s `Package.swift` file. Substitute `"x.x.x"` with the latest `Kitura-WebSocket` [release](https://github.com/IBM-Swift/Kitura-WebSocket/releases).
+Add the `Kitura-WebSocket` package to the dependencies within your application’s `Package.swift` file. Substitute `"x.x.x"` with the latest `Kitura-WebSocket` [release](https://github.com/KituraKommunity/Kitura-WebSocket/releases).
 
 ```swift
-.package(url: "https://github.com/IBM-Swift/Kitura-WebSocket.git", from: "x.x.x")
+.package(url: "https://github.com/KituraKommunity/Kitura-WebSocket.git", from: "x.x.x")
 ```
 
 Add `Kitura-WebSocket` to your target's dependencies:
@@ -156,7 +156,7 @@ WebSocket.unregister(path: String)
 This function is passed the path which the `WebSocketService` being unregistered was registered on.
 
 ## Autobahn TestSuite
-Kitura-WebSocket complies to the [Autobahn Testsuite](https://github.com/crossbario/autobahn-testsuite) for web sockets. To create an echo server and run this test suite against it, follow the instructions [here](https://github.com/IBM-Swift/Kitura-WebSocket/blob/master/AutobahnTests.md).
+Kitura-WebSocket complies to the [Autobahn Testsuite](https://github.com/crossbario/autobahn-testsuite) for web sockets. To create an echo server and run this test suite against it, follow the instructions [here](https://github.com/KituraKommunity/Kitura-WebSocket/blob/master/AutobahnTests.md).
 
 ## Example - Simple
 This example is a simplistic chat service to demonstrate how to use the Kitura-WebSocket APIs.
@@ -189,9 +189,9 @@ import PackageDescription
 let package = Package(
     name: "ChatServer",
     dependencies: [
-         .package(url: "https://github.com/IBM-Swift/Kitura.git", .upToNextMinor(from: "x.x.x")),
-         .package(url: "https://github.com/IBM-Swift/HeliumLogger.git", from: "x.x.x"),
-         .package(url: "https://github.com/IBM-Swift/Kitura-WebSocket.git", from: "x.x.x")
+         .package(url: "https://github.com/KituraKommunity/Kitura.git", .upToNextMinor(from: "x.x.x")),
+         .package(url: "https://github.com/KituraKommunity/HeliumLogger.git", from: "x.x.x"),
+         .package(url: "https://github.com/KituraKommunity/Kitura-WebSocket.git", from: "x.x.x")
     ],
     targets: [
         .target(
@@ -406,7 +406,7 @@ node chat.js localhost:8080
 As described above, the server echoes all text messages sent to it to all of the clients that have connected to it, with the exception of the client that sent the message. Therefore, in order to see the example in action you will need to connect more than one client to the server. The client can be run in several terminal windows on the same computer. You can then enter a message on one client and see it appear on another client and vice versa.
 
 ## Example - Advanced
-For a more complete example please see [Kitura-Sample](https://github.com/IBM-Swift/Kitura-Sample).
+For a more complete example please see [Kitura-Sample](https://github.com/KituraKommunity/Kitura-Sample).
 
 ## API Documentation
 For more information visit our [API reference](https://ibm-swift.github.io/Kitura-WebSocket/index.html).
@@ -416,4 +416,4 @@ For more information visit our [API reference](https://ibm-swift.github.io/Kitur
 We love to talk server-side Swift, and Kitura. Join our [Slack](http://swift-at-ibm-slack.mybluemix.net/) to meet the team!
 
 ## License
-This library is licensed under Apache 2.0. Full license text is available in [LICENSE](https://github.com/IBM-Swift/Kitura-WebSocket/blob/master/LICENSE.txt).
+This library is licensed under Apache 2.0. Full license text is available in [LICENSE](https://github.com/KituraKommunity/Kitura-WebSocket/blob/master/LICENSE.txt).

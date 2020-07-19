@@ -21,9 +21,9 @@ import PackageDescription
 let package = Package(
     name: "WebSocketEchoServer",
     dependencies: [
-         .package(url: "https://github.com/IBM-Swift/Kitura.git", from: "2.3.0"),
-         .package(url: "https://github.com/IBM-Swift/HeliumLogger.git", .upToNextMinor(from: "1.7.0")),
-         .package(url: "https://github.com/IBM-Swift/Kitura-WebSocket.git", from: "2.0.0")
+         .package(url: "https://github.com/KituraKommunity/Kitura.git", from: "2.9.100"),
+         .package(url: "https://github.com/KituraKommunity/HeliumLogger.git", .upToNextMinor(from: "1.9.0")),
+         .package(url: "https://github.com/KituraKommunity/Kitura-WebSocket.git", from: "2.1.10")
     ],
     targets: [
     .target(
